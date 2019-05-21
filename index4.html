@@ -8,7 +8,7 @@
 <!--se determina la ubicacion-->
 <div id='ubicacion'></div>
 <script type="text/javascript">
-if(navigator.geolocation){
+if (navigator.geolocation){
 	navigator.geolocation.getCurrentPosition (mostrarUbicacion);
 } else{alert("¡Error!Este navegador no soporta la Geolocalizacion.");}
 function refrescarUbicacion(){
@@ -20,10 +20,10 @@ function refrescarUbicacion(){
     <div id="mapholder"></div>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFd0aiE5FttY8XRAFI9ecTSpgo2vP-qMk"></script>
     
-<button onclick="cargarmap()">Cargar mapa</button>
+<button onclick="cargamap()">Cargar mapa</button>
 <script type="text/javascript">
 var x=document.getElementById("demo");
-function cargarmap(){
+function cargamap(){
 	navigator.geolocation.getCurrentPosition (showPosition,showError);
 	function showPosition(position)
 	{
